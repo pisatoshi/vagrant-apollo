@@ -3,7 +3,8 @@
 Apache Apollo MQTT broker
 
 ## Manual Setting on AWS
-Create a AWS security group "apollo".
+Create a AWS security group.  
+default using "apollo".
 
 Allow inbound access to the following ports.
 
@@ -18,15 +19,20 @@ Allow inbound access to the following ports.
 ## Setup environment variables for AWS.
 Copy "awsrc.example" to ".awsrc", and edit environment variables.
 
-- JAVA_HOME
-- EC2_HOME
-  ec2-api-tools install directory
-- EC2_URL
-  api endpoint url
-- AWS_ACCESS_KEY
-- AWS_SECRET_KEY
-- AWS_KEYPAIR_NAME
-- AWS_PRIVATE_KEY_PATH
+- JAVA_HOME  
+    Java runtime home
+- EC2_HOME  
+    ec2-api-tools install directory
+- EC2_URL  
+    EC2 API endpoint url
+- AWS_ACCESS_KEY_ID  
+    Access key id
+- AWS_SECRET_ACCESS_KEY  
+    Seret access key
+- AWS_KEYPAIR_NAME  
+    Key pair name
+- AWS_PRIVATE_KEY_PATH  
+    Private key(.pem) file location
 
 ## Create instance (VurtualBox)
 ```Bash
